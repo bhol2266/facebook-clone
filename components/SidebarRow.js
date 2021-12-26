@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 function SidebarRow({ src, Icon, title }) {
     return (
-        <div className='flex items-center hover:bg-gray-200 rounded-xl cursor-pointer'>
+        <div className='flex items-center justify-start hover:bg-gray-200 rounded-xl cursor-pointer'>
             {src && (
                 <Image
                     className='rounded-full'
@@ -15,8 +15,8 @@ function SidebarRow({ src, Icon, title }) {
                 />
             )}
 
-            {Icon && <Icon className='h-8 w-8 inline text-blue-500' />}
-            <p className='hidden sm:inline-flex font-medium m-2'>{title}</p>
+            {Icon && <Icon className='h-6 w-8 inline text-blue-500 md:h-8' />}
+            <p className='hidden sm:inline-flex font-md text-sm m-2'>{title}</p>
 
 
         </div>

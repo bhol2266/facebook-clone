@@ -6,7 +6,7 @@ import Router from 'next/router'
 function Login() {
 
 
-    const handleclick = () => {
+    const handleclickGithub = () => {
         signIn('github')
     }
     const handleclickfacebook = () => {
@@ -28,7 +28,7 @@ function Login() {
 
             <h1 onClick={handleclickfacebook} className='w-1/2 p-5 bg-blue-500 rounded-full text-white text-center cursor-pointer'>Login with Facebook</h1>
 
-            <h1 onClick={handleclick} className='w-1/2 bg-github m-4 p-5 bg-blue-500 rounded-full text-white text-center cursor-pointer'>Login with Github</h1>
+            <h1 onClick={handleclickGithub} className='w-1/2 bg-github m-4 p-5 bg-blue-500 rounded-full text-white text-center cursor-pointer'>Login with Github</h1>
 
             <h1 onClick={SignInGoogle} className='w-1/2  m-4 p-5 bg-red-500 rounded-full text-white text-center cursor-pointer'>Login with Google</h1>
         </div>

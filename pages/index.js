@@ -23,11 +23,13 @@ export default function Home() {
 
       <Header />
 
+      <main className='flex'>
+        {/*Sidebar  */}
+        <Sidebar />
+        {/* Feed */}
+        <Feed />
+      </main>
 
-      {/*Sidebar  */}
-      <Sidebar />
-      {/* Feed */}
-      <Feed/>
       {/* Widgets */}
     </div>
   )

@@ -1,7 +1,16 @@
+import Stories from "./Stories"
+
 function Feed() {
     return (
-        <div>
+        <div className='mx-auto h-screen p-2'>
             {/* Stories */}
+            <Stories />
+
+            {/* InoutBox */}
+
+            {/* Post */}
+
+
         </div>
     )
 }
