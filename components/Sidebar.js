@@ -19,7 +19,7 @@ function Sidebar() {
     const { data: session } = useSession()
 
     return (
-        <div className='large:bg-blue-500 p-2 mt-5 w-fit'>
+        <div className='flex sm:flex-col justify-between p-2  w-full sm:w-fit self-start sm:sticky top-16'>
             <SidebarRow src={session.user.image} title={session.user.name} />
             <SidebarRow Icon={UserIcon} title='friends' />
             <SidebarRow Icon={UserGroupIcon} title='Groups' />
